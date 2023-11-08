@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 1000);
     }
     
-    setInterval(flash, 5000);
+    setInterval(flash, 576000);
 });
 
 
