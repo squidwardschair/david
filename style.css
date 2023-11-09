@@ -1,3 +1,8 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
 #flashdiv {
     display: flex;
     justify-content: center;
@@ -34,6 +39,9 @@
     left: 0;
 }
 
+#ucanthide {
+  background-color: red;
+}
 #logoheader {
     position: absolute;
     top: 0px;
@@ -46,31 +54,55 @@
     position: absolute;
     z-index: 3;
     text-align: left;
-    left: 75%;
-    transform: translate(-50%, 0);
-
+    width: 85%;
+    top: 0%;
+    left: 12%;
+    height: 70%;
 }
 
 .left {
-    top: 5%;
+    position: absolute;
+    top: 2%;
     left: 15%;
 }
 .center {
-    top: 15%;
+    position: absolute;
+    top: 27%;
     left: 20%;
 }
 .right {
-    top: 25%;
-    left: 25%;
+    position: absolute;
+    top: 52%;
+    left: 0%;
 }
 .bigbadbold {
-    font-family: 'Monoton', sans-serif;
-    font-size: 75px;
-    color: white;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 120px;
 }
+
+.white {
+  color: white;
+}
+
+.fentanyl {
+  color: darkred;
+  font-family: 'Monoton', sans-serif;
+}
+
 body {
     background-color: #1a1a1d;
     margin: 0px;
+}
+
+.downarrow {
+  height: 96px;
+  width: 96px;
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+  z-index: 4;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .container {
@@ -78,7 +110,8 @@ body {
     justify-content: center;
 }
 
-#test {
+#mapbox {
+    top: 15%;
     display: block;
     justify-content: center;
     margin-left: auto;
