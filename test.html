@@ -5,20 +5,43 @@
     <meta charset="utf-8">
     <title>Map Example</title>
     <script src="mapdata.js"></script>
-    <script src="statemap.js"></script>
+    <script src="usmap.js"></script>
 	<script src="flash.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
+
 	<body>
+		<div id="header">
+			<img src="https://newsinfo.inquirer.net/files/2022/09/POGOs-gambling-filephoto-092722.png" alt="Image from PSA">
+
+			<div id="logoheader">
+				<img src="https://i.gyazo.com/7e5ae6ef813dab86a928e2e73b45180b.png">
+			</div>
+
+			<div class="textheader left">
+				<p class="bigbadbold">DON'T</p>
+			</div>
+			<div class="textheader center">	<p class="bigbadbold">GAMBLE ON</p></div>
+			<div class="textheader right">
+				<p class="bigbadbold">FENTANYL</p>
+			</div>
+		</div>
+
+
 		<div id="flashdiv">
 			<h1 id="flashtext">Someone just died from Fentanyl</h1>
 		</div>
-		<div>
-			<h1>HTML5/JavaScript Map</h1>
-			<div style="max-width: 700px"> <!-- Keep map above fold -->
-				<div id="map"></div>
-			</div>
-			<div>Please read the <a href="http://simplemaps.com/docs">documentation</a> to learn how to customize this map.</div>
+		<div id="test" style="max-width: 700px"> <!-- Keep map above fold -->
+			<div id="map"></div>
+		</div>
+		<div class="container">
+			<p class="defaulttext">insert wild statistic here blah blah blah blah blah click each state to learn more</p>
+		</div>
+		<div class="container">
+			<img src="https://i.gyazo.com/bc82ca533a668f2f94cb09b959d53f5d.png">
 		</div>
 	</body>
 </html>

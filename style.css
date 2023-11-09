@@ -21,3 +21,73 @@
     font-style: oblique;
 
 }
+
+#header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#logoheader {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+
+.textheader {
+    position: absolute;
+    z-index: 3;
+    text-align: left;
+    left: 75%;
+    transform: translate(-50%, 0);
+
+}
+
+.left {
+    top: 5%;
+    left: 15%;
+}
+.center {
+    top: 15%;
+    left: 20%;
+}
+.right {
+    top: 25%;
+    left: 25%;
+}
+.bigbadbold {
+    font-family: 'Monoton', sans-serif;
+    font-size: 75px;
+    color: white;
+}
+body {
+    background-color: #1a1a1d;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#test {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.defaulttext{
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
