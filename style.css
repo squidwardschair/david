@@ -1,6 +1,6 @@
 html {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 #flashdiv {
@@ -13,8 +13,9 @@ html {
     bottom: 0;
     left: 0;
     border: 1px solid black;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);    text-align: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    text-align: center;
     position: fixed;
     z-index: 10000;
     visibility: hidden;
@@ -40,16 +41,32 @@ html {
 }
 
 #ucanthide {
-  background-color: red;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(120, 32, 32, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+
 }
+
 #logoheader {
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 2;
+    text-align: center;
 }
 
+.subtitle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 .textheader {
     position: absolute;
     z-index: 3;
@@ -65,28 +82,31 @@ html {
     top: 2%;
     left: 15%;
 }
+
 .center {
     position: absolute;
     top: 27%;
     left: 20%;
 }
+
 .right {
     position: absolute;
     top: 52%;
     left: 0%;
 }
+
 .bigbadbold {
     font-family: 'Audiowide', sans-serif;
     font-size: 120px;
 }
 
 .white {
-  color: white;
+    color: white;
 }
 
 .fentanyl {
-  color: darkred;
-  font-family: 'Monoton', sans-serif;
+    color: lightslategray;
+    font-family: 'Exo 2', sans-serif;
 }
 
 body {
@@ -95,32 +115,49 @@ body {
 }
 
 .downarrow {
-  height: 96px;
-  width: 96px;
-  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
-  z-index: 4;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, 0);
+    height: 96px;
+    width: 96px;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+    z-index: 4;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
-.container {
+#maptext {
     display: flex;
+    width: 70%;
+    left: 0%;
+    transform: translate(50%, 0);
     justify-content: center;
+    z-index: 3;
+    color: white;
+    font-size: large;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #mapbox {
-    top: 15%;
-    display: block;
+    height: 70%;
+    width: 70%;
+    display: inline-block;
+    margin-top: 12%;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.defaulttext{
+.defaulttext {
     font-family: 'Roboto Mono', monospace;
     font-size: large;
     color: white;
     text-align: center;
+}
+
+.subheaders {
+    font-size: 75px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin: 0px;
 }
