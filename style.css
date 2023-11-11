@@ -12,7 +12,6 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    border: 1px solid black;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
     text-align: center;
@@ -22,26 +21,30 @@ html {
 }
 
 #flashtext {
-    font-family: Tahoma;
-    font-size: xx-large;
-    font-style: oblique;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 80px;
+    color: white;
 
 }
 
 #header {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 }
 
-#ucanthide {
-    background: #0b0b0d;
+.imgdiv {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.section {
+    background: black;
     display: block;
     position: relative;
     justify-content: center;
@@ -49,6 +52,9 @@ html {
     align-content: center;
     flex-direction: column;
     text-align: center;
+    overflow: auto;
+    object-fit: contain;
+
 
 }
 
@@ -62,9 +68,37 @@ html {
 
 .subtitle {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 3;
+    text-align: center;
+}
+
+.fitwidth {
+    width: 70%;
+
+}
+
+#logo {
+    position: absolute;
+    z-index: 5;
+    font-size: 35px;
+    left: 1%;
+    top: 1%;
+    color: white;
+    font-family: 'Alumni Sans Inline One', sans-serif;
+    text-shadow: 2px 0 #ff001b, -2px 0 #ff001b, 0 2px #ff001b, 0 -2px #ff001b,
+        1px 1px #ff001b, -1px -1px #ff001b, 1px -1px #ff001b, -1px 1px #ff001b;
+}
+
+#donations {
+    position: absolute;
+    z-index: 4;
+    font-size: 35px;
+    right: 1%;
+    top: 1%;
+    font-family: 'Alumni Sans Inline One', sans-serif;
 }
 
 .textheader {
@@ -77,21 +111,24 @@ html {
     height: 30%;
 }
 
-.bigbadbold {
+.coverbold {
     font-family: 'Exo 2', sans-serif;
     font-size: 50px;
     margin: 5px;
     text-align: center;
-    
+
+}
+
+.bigbold {
+    font-weight: 900;
+}
+
+.littlebold {
+    font-weight: 700;
 }
 
 .white {
     color: white;
-}
-
-.fentanyl {
-    color: darkred;
-    fill: none;
 }
 
 body {
@@ -111,22 +148,21 @@ body {
 }
 
 #maptext {
-    display: flex;
-    width: 70%;
-    left: 0%;
-    transform: translate(50%, 0);
-    justify-content: center;
-    z-index: 3;
-    color: white;
-    font-size: large;
-    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    display: inline-block;
+    top: 90%;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
 }
+
 
 #mapbox {
     height: 70%;
     width: 70%;
     display: inline-block;
-    margin-top: 12%;
+    margin-top: 17%;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -141,8 +177,86 @@ body {
 
 .subheaders {
     font-size: 75px;
-    color: white;
     font-family: 'Exo 2', sans-serif;
     text-align: center;
-    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.subsubheaders {
+    font-size: 45px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.notevenheaders {
+    font-size: 30px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.pink {
+    color: #c3073f;
+}
+
+#verticalline {
+    height: 50%;
+    position: absolute;
+    width: 2px;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 3px solid grey;
+    background-color: grey;
+}
+
+#rightpill {
+    position: absolute;
+    top: 50%;
+
+    left: 75%;
+    transform: translate(-75%, 0);
+    z-index: 3;
+    text-align: center;
+}
+
+#leftpill {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, 0);
+    z-index: 3;
+    text-align: center;
+}
+
+.highmargin {
+    margin-top: 30%;
+}
+
+.pinkbright {
+    color: #c3073f;
+    fill: none;
+    filter: brightness(1.75);
+    text-shadow: #c3073f 1px 0 10px;
+}
+
+.inline {
+    display: inline;
+}
+
+.fullwidth {
+    width: 90%;
+}
+
+.halfwidth {
+    width: 40%;
+}
+
+#oddsagainst {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }

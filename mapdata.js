@@ -8,8 +8,8 @@ var simplemaps_usmap_mapdata={
     
 		//State defaults
 		state_description: "State description",
-    state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
+    state_color: "#00000",
+    state_hover_color: "#c3073f",
     state_url: "https://simplemaps.com",
     border_size: 1.5,
     border_color: "#ffffff",
@@ -55,9 +55,9 @@ var simplemaps_usmap_mapdata={
     
 		//Popup settings
 		popup_color: "white",
-    popup_opacity: 0.9,
-    popup_shadow: 1,
-    popup_corners: 5,
+    popup_opacity: 1,
+    popup_shadow: 0,
+    popup_corners: 0.1,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
     

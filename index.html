@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Map Example</title>
+	<script src="mapdata.js"></script>
+	<script src="usmap.js"></script>
+	<script src="flash.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Audiowide&family=Exo+2:wght@700;900&family=Nosifer&family=Monoton&family=Roboto+Mono:wght@700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div id="header" class="imgdiv">
+		<img src="background.png" alt="Image from PSA">
+		<span id="logo">FENTANYL.LIFE</span>
+		<a class="white" id="donations" href="https://www.overdoselifeline.org/donate/" target="_blank">Donate to
+			Overdose Lifeline</a>
+		<div class="textheader">
+			<p class="coverbold white bigbold">DON'T</p>
+			<p class="coverbold white bigbold">GAMBLE ON</p>
+			<p class="coverbold pinkbright bigbold">FENTANYL</p>
+		</div>
+		<img src="downarrow.svg" class="downarrow" alt="Down arrow">
+
+	</div>
+
+
+	<div id="flashdiv">
+		<h1 id="flashtext">Someone just died from Fentanyl</h1>
+	</div>
+
+	<div class="section">
+		<p data-aos="zoom-in-down" class="subheaders pink bigbold">SPOT THE DIFFERENCE</p>
+		<p data-aos="zoom-in-down" class="subsubheaders pink bigbold">One has been laced</p>
+		<div id="leftpill">
+			<img src="pillleft.png">
+		</div>
+		<div id="verticalline"></div>
+		<div id="rightpill">
+			<img src="pillright.png">
+		</div>
+		<p class="subsubheaders pinkbright highmargin littlebold" data-aos="zoom-in-down">6/10</p>
+		<p class="subsubheaders white littlebold" data-aos="zoom-in-down">PILLS ARE LACED WITH LETHAL AMOUNTS OF FENTANYL</p>
+
+	</div>
+	<div class="section">
+		<div class="subtitle fullwidth">
+			<p class="subheaders pink bigbold" data-aos="zoom-in-down">THE UNITED STATES OF FENTANYL</p>
+		</div>
+		<div id="mapbox"> <!-- Keep map above fold -->
+			<div id="map"></div>
+		</div>
+		<div id="maptext">
+			<p class="subsubheaders littlebold white" data-aos="zoom-in-down">
+				FENTANYL TRAGEDIES FROM AROUND THE COUNTRY
+			</p>
+		</div>
+	</div>
+	<div class="imgdiv">
+		<img src="roullettea.png">
+
+		<div class="subtitle fullwidth">
+
+			<p class="notevenheaders white bigbold inline"  data-aos="zoom-out">overdose deaths from fentanyl-laced stimulants have risen
+			</p>
+			<p class="notevenheaders pinkbright bigbold inline"  data-aos="zoom-out">5000% </p>
+			<p class="notevenheaders white bigbold inline"  data-aos="zoom-out">since 2010</p>
+		</div>
+
+		<div class="subtitle halfwidth" id="oddsagainst">
+			<p class="subheaders pinkbright bigbold" data-aos="zoom-out">THE ODDS ARE AGAINST YOU</p>
+		</div>
+	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+</body>
+
+</html>

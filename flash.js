@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log("diosjfiosdfa")
       setTimeout(function() {
         div.style.visibility = "hidden";
-      }, 1000);
+      }, 3000);
     }
     
     setInterval(flash, 576000);
