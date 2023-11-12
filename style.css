@@ -176,10 +176,12 @@ body {
 
 .subsubheaders {
     font-size: 45px;
+    align-self: center;
     font-family: 'Exo 2', sans-serif;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0.5vh;
+    width: 90vw;
 }
 
 .notevenheaders {
