@@ -16,7 +16,6 @@ html {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
     text-align: center;
     position: fixed;
-    z-index: 10000;
     visibility: hidden;
 }
 
@@ -30,7 +29,7 @@ html {
 
 #header {
     display: flex;
-    background-image: url(assets/background.png);
+    background-image: url(assets/background.jpg);
     flex-flow: column;
     background-size: cover;
     align-content: center;
@@ -61,13 +60,14 @@ html {
     display: flex;
     flex-flow: column;
     padding-top: 10vh;
+    padding-bottom: 10vh;
 
 
 }
 
 .invisible {
-    height: 45vh;
-    width: 25vh;
+    height: 50vh;
+    width: 25vw;
 }
 
 .navbar {
@@ -99,10 +99,12 @@ html {
 }
 
 #donations {
-    font-family: 'Alumni Sans Inline One', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .textheader {
+    margin-top: 5vh;
+
     text-align: center;
     width: 45vw;
     align-self: flex-end;
@@ -112,13 +114,15 @@ html {
 .arrow {
     align-self: center;
 }
+
 .textcontainer {
     display: flex;
     flex-direction: row;
     width: 65vw;
     justify-content: end;
-    padding-bottom: 10vh;
+    margin-bottom: 5vh;
 }
+
 .coverbold {
     font-family: 'Exo 2', sans-serif;
     font-size: 50px;
@@ -151,20 +155,12 @@ body {
 }
 
 
-
 #mapbox {
     height: 80%;
     width: 80%;
     display: inline-block;
     margin-top: 2vh;
     align-self: center;
-}
-
-.defaulttext {
-    font-family: 'Roboto Mono', monospace;
-    font-size: large;
-    color: white;
-    text-align: center;
 }
 
 .subheaders {
@@ -212,10 +208,6 @@ body {
     margin-bottom: 10vh;
 }
 
-.highmargin {
-    margin-top: 30%;
-}
-
 .smallinvisible {
     width: 15vw;
 }
@@ -229,11 +221,13 @@ body {
     align-self: center;
     width: 60vw;
 }
+
 .verticalline {
     fill: grey;
     border: 1px solid grey;
     height: 30vh;
 }
+
 .pinkbright {
     color: #c3073f;
     fill: none;
@@ -248,20 +242,11 @@ pinky {
     text-shadow: #c3073f 1px 0 10px;
 }
 
-.inline {
-    display: inline;
+
+#pillimgleft {
+    padding-left: 5vw;
 }
 
-.fullwidth {
-    width: 90%;
-}
-
-.halfwidth {
-    width: 40%;
-}
-
-#oddsagainst {
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, 0);
+#pillimgright {
+    padding-right: 5vw;
 }
