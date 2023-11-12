@@ -69,7 +69,7 @@ var simplemaps_usmap_mapdata={
     images_directory: "default",
     import_labels: "no",
     fade_time: 0.1,
-    link_text: "View Website"
+    link_text: "Article Link"
   },
   state_specific: {
     HI: {

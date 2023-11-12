@@ -27,11 +27,24 @@ html {
 
 }
 
+
 #header {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    background-image: url(assets/background.png);
+    flex-flow: column;
+    background-size: cover;
+    align-content: center;
+    height: 100vh;
+
+}
+
+#bottom {
+    display: flex;
+    background-image: url(assets/roullette.png);
+    height: 100vh;
+    flex-flow: column;
+    background-size: cover;
+    align-content: center;
 }
 
 .imgdiv {
@@ -45,25 +58,22 @@ html {
 
 .section {
     background: black;
-    display: block;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-    overflow: auto;
-    object-fit: contain;
+    display: flex;
+    flex-flow: column;
+    padding-top: 10vh;
 
 
 }
 
-#logoheader {
-    position: absolute;
-    top: 0px;
-    width: 5%;
-    z-index: 2;
-    text-align: center;
+.invisible {
+    height: 45vh;
+    width: 25vh;
+}
+
+.navbar {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
 }
 
 .subtitle {
@@ -81,11 +91,7 @@ html {
 }
 
 #logo {
-    position: absolute;
-    z-index: 5;
     font-size: 35px;
-    left: 1%;
-    top: 1%;
     color: white;
     font-family: 'Alumni Sans Inline One', sans-serif;
     text-shadow: 2px 0 #ff001b, -2px 0 #ff001b, 0 2px #ff001b, 0 -2px #ff001b,
@@ -93,24 +99,26 @@ html {
 }
 
 #donations {
-    position: absolute;
-    z-index: 4;
-    font-size: 35px;
-    right: 1%;
-    top: 1%;
     font-family: 'Alumni Sans Inline One', sans-serif;
 }
 
 .textheader {
-    position: absolute;
-    z-index: 3;
-    text-align: left;
-    width: 50%;
-    top: 45%;
-    left: 17%;
-    height: 30%;
+    text-align: center;
+    width: 45vw;
+    align-self: flex-end;
+
 }
 
+.arrow {
+    align-self: center;
+}
+.textcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+    justify-content: end;
+    padding-bottom: 10vh;
+}
 .coverbold {
     font-family: 'Exo 2', sans-serif;
     font-size: 50px;
@@ -140,32 +148,16 @@ body {
     height: 96px;
     width: 96px;
     filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
-    z-index: 4;
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translate(-50%, 0);
 }
 
-#maptext {
-    position: relative;
-    display: inline-block;
-    top: 90%;
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%;
-}
 
 
 #mapbox {
-    height: 70%;
-    width: 70%;
+    height: 85%;
+    width: 85%;
     display: inline-block;
-    margin-top: 17%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2vh;
+    align-self: center;
 }
 
 .defaulttext {
@@ -186,57 +178,68 @@ body {
     font-size: 45px;
     font-family: 'Exo 2', sans-serif;
     text-align: center;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0.5vh;
 }
 
 .notevenheaders {
-    font-size: 30px;
+    align-self: center;
+    width: 82vw;
+    font-size: 28px;
     font-family: 'Exo 2', sans-serif;
     text-align: center;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 2vh;
 }
 
 .pink {
     color: #c3073f;
 }
 
-#verticalline {
-    height: 50%;
-    position: absolute;
-    width: 2px;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border: 3px solid grey;
-    background-color: grey;
-}
 
 #rightpill {
-    position: absolute;
-    top: 50%;
-
-    left: 75%;
-    transform: translate(-75%, 0);
-    z-index: 3;
-    text-align: center;
+    align-self: flex-end;
 }
 
-#leftpill {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-25%, 0);
-    z-index: 3;
-    text-align: center;
+#pills {
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10vh;
 }
 
 .highmargin {
     margin-top: 30%;
 }
 
+.smallinvisible {
+    width: 15vw;
+}
+
+.biginvisible {
+    height: 27vh;
+    width: 1vh;
+}
+
+#endsaying {
+    align-self: center;
+    width: 60vw;
+}
+.verticalline {
+    fill: grey;
+    border: 1px solid grey;
+    height: 30vh;
+}
 .pinkbright {
+    color: #c3073f;
+    fill: none;
+    filter: brightness(1.75);
+    text-shadow: #c3073f 1px 0 10px;
+}
+
+pinky {
     color: #c3073f;
     fill: none;
     filter: brightness(1.75);

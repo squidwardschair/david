@@ -21,18 +21,23 @@
 </head>
 
 <body>
-	<div id="header" class="imgdiv">
-		<img src="assets/background.png" alt="Image from PSA">
+	<div id="header">
+		<div class="navbar">
 		<span id="logo">FENTANYL.LIFE</span>
 		<a class="white" id="donations" href="https://www.overdoselifeline.org/donate/" target="_blank">Donate to
-			Overdose Lifeline</a>
+			Overdose Lifeline</a>		
+		</div>
+		<div class="invisible"></div>
+		<div class="textcontainer">
 		<div class="textheader">
 			<p class="coverbold white bigbold">DON'T</p>
 			<p class="coverbold white bigbold">GAMBLE ON</p>
 			<p class="coverbold pinkbright bigbold">FENTANYL</p>
 		</div>
+		</div>
+		<div class="arrow">
 		<img src="assets/downarrow.svg" class="downarrow" alt="Down arrow">
-
+		</div>
 	</div>
 
 
@@ -41,46 +46,40 @@
 	</div>
 
 	<div class="section">
-		<p data-aos="zoom-in-down" class="subheaders pink bigbold">SPOT THE DIFFERENCE</p>
-		<p data-aos="zoom-in-down" class="subsubheaders pink bigbold">One has been laced</p>
-		<div id="leftpill">
+		<span data-aos="zoom-in-down" class="subheaders pink bigbold">SPOT THE DIFFERENCE</span>
+		<span data-aos="zoom-in-down" class="subsubheaders pink bigbold">One has been laced</span>
+		<div id="pills">
 			<img src="assets/pillleft.png">
-		</div>
-		<div id="verticalline"></div>
-		<div id="rightpill">
+			<span class="smallinvisible"></span>
+			<span class="verticalline"></span>
+			<span class="smallinvisible"></span>
 			<img src="assets/pillright.png">
 		</div>
-		<p class="subsubheaders pinkbright highmargin littlebold" data-aos="zoom-in-down">6/10</p>
-		<p class="subsubheaders white littlebold" data-aos="zoom-in-down">PILLS ARE LACED WITH LETHAL AMOUNTS OF FENTANYL</p>
+		<span class="subsubheaders pinkbright littlebold" data-aos="zoom-in-down">6/10</span>
+		<span class="subsubheaders white littlebold" data-aos="zoom-in-down">PILLS ARE LACED WITH LETHAL AMOUNTS OF FENTANYL</span>
 
 	</div>
 	<div class="section">
-		<div class="subtitle fullwidth">
-			<p class="subheaders pink bigbold" data-aos="zoom-in-down">THE UNITED STATES OF FENTANYL</p>
-		</div>
+		<span class="subheaders pink bigbold" data-aos="zoom-in-down">THE UNITED STATES OF FENTANYL</span>
 		<div id="mapbox"> <!-- Keep map above fold -->
 			<div id="map"></div>
 		</div>
-		<div id="maptext">
-			<p class="subsubheaders littlebold white" data-aos="zoom-in-down">
+			<span class="subsubheaders littlebold white" data-aos="zoom-in-down">
 				FENTANYL TRAGEDIES FROM AROUND THE COUNTRY
-			</p>
-		</div>
-	</div>
-	<div class="imgdiv">
-		<img src="assets/roullette.png">
+			</span>
+=	</div>
 
-		<div class="subtitle fullwidth">
 
-			<p class="notevenheaders white bigbold inline"  data-aos="zoom-out">overdose deaths from fentanyl-laced stimulants have risen
-			</p>
-			<p class="notevenheaders pinkbright bigbold inline"  data-aos="zoom-out">5000% </p>
-			<p class="notevenheaders white bigbold inline"  data-aos="zoom-out">since 2010</p>
-		</div>
+	<div id="bottom">
 
-		<div class="subtitle halfwidth" id="oddsagainst">
-			<p class="subheaders pinkbright bigbold" data-aos="zoom-out">THE ODDS ARE AGAINST YOU</p>
-		</div>
+
+		<span class="notevenheaders white bigbold inline"  data-aos="zoom-out">overdose deaths from fentanyl-laced stimulants have risen <pinky>5000%</pinky> since 2010</span>
+
+		<div class="biginvisible"></div>
+
+
+		<span id="endsaying" class="subheaders pinkbright bigbold" data-aos="zoom-out">THE ODDS ARE AGAINST YOU</span>
+
 	</div>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
