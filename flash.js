@@ -1,15 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var div = document.getElementById("flashdiv");
-
+  var flashdiv = document.getElementById("flashdiv");
+  var firstsection = document.getElementById("firstsection");
+  var header = document.getElementById("header");
   function flash() {
-    div.style.visibility = "visible";
+    flashdiv.style.visibility = "visible";
     console.log("diosjfiosdfa")
     setTimeout(function () {
-      div.style.visibility = "hidden";
+      flashdiv.style.visibility = "hidden";
     }, 3000);
   }
 
   setInterval(flash, 576000);
+
+  if (header.offsetHeight<window.innerHeight) {
+    console.log('ya')
+    var difference=window.innerHeight-header.offsetHeight
+    firstsection.style.marginTop = difference + "px";
+  }
+});
+
+window.addEventListener("resize", function(event) {
+  var firstsection = document.getElementById("firstsection");
+  var header = document.getElementById("header");
+  if (header.offsetHeight<window.innerHeight) {
+    console.log('bo')
+    var difference=window.innerHeight-header.offsetHeight
+    firstsection.style.marginTop = difference + "px";
+  }
 });
 
 
