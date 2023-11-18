@@ -23,7 +23,6 @@ window.addEventListener("resize", function(event) {
   var firstsection = document.getElementById("firstsection");
   var header = document.getElementById("header");
   if (header.offsetHeight<window.innerHeight) {
-    console.log('bo')
     var difference=window.innerHeight-header.offsetHeight
     firstsection.style.marginTop = difference + "px";
   }
