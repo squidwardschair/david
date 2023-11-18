@@ -17,6 +17,8 @@ html {
     text-align: center;
     position: fixed;
     visibility: hidden;
+    z-index: 5;
+    
 }
 
 #flashtext {
