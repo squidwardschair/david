@@ -180,23 +180,6 @@ body {
     margin-bottom: 10vh;
 }
 
-#narcaninfographic {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#narcan {
-    background-image: url(assets/narcan.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
-    width: 50%;
-}
-
-
 .pillsplaceholder {
     width: 15vw;
 }
