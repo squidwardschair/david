@@ -19,13 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-window.addEventListener("resize", function(event) {
-  var firstsection = document.getElementById("firstsection");
-  var header = document.getElementById("header");
-  if (header.offsetHeight<window.innerHeight) {
-    var difference=window.innerHeight-header.offsetHeight
-    firstsection.style.marginTop = difference + "px";
-  }
-});
-
 
