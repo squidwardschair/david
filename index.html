@@ -11,6 +11,7 @@
 	<script src="mapdata.js"></script>
 	<script src="usmap.js"></script>
 	<script src="utils.js"></script>
+	<script src="navbar.js"></script>
 	<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +23,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Audiowide&family=Exo+2:wght@700;900&family=Nosifer&family=Monoton&family=Roboto+Mono:wght@700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,9 +31,15 @@
 		<span id="flashtext">Someone just died from Fentanyl</span>
 	</div>
 	<div id="header">
-		<div class="navbar">
-			<span id="logo">FENTANYL.LIFE</span>
-			<a class="white" id="donations" href="https://www.overdoselifeline.org/donate/" target="_blank">Donate to
+		<div id="navbar" class="navbar">
+			<a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			<a href="index.html">Home</a>
+			<a href="narcan.html">Learn to Save Lives</a>
+			<a href="faces.html">Faces of Fentanyl</a>
+			<a href="sources.html">Sources and Information</a>
+			<a href="https://www.overdoselifeline.org/donate/" target="_blank">Donate to
 				Overdose Lifeline</a>
 		</div>
 		<div id="headerplaceholder"></div>
@@ -52,7 +60,7 @@
 
 	<div id="firstsection" class="section">
 		<span data-aos="zoom-in-down" class="headers pink bigbold">SPOT THE DIFFERENCE</span>
-		<span data-aos="zoom-in-down" class="smallerheaders pink bigbold">One has been laced</span>
+		<span data-aos="zoom-in-down" class="smallerheaders smallheadersindex pink bigbold">One has been laced</span>
 		<div id="pills">
 			<div id="pillimgleft" class="pillimg"></div>
 			<span class="pillsplaceholder"></span>
@@ -60,8 +68,8 @@
 			<span class="pillsplaceholder"></span>
 			<div id="pillimgleft" class="pillimg"></div>
 		</div>
-		<span class="smallerheaders pinkbright littlebold" data-aos="zoom-in-down">6/10</span>
-		<span class="smallerheaders white littlebold" data-aos="zoom-in-down">ILLEGAL PILLS ARE LACED WITH LETHAL AMOUNTS OF
+		<span class="smallerheaders smallheadersindex pinkbright littlebold" data-aos="zoom-in-down">6/10</span>
+		<span class="smallerheaders smallheadersindex white littlebold" data-aos="zoom-in-down">ILLEGAL PILLS ARE LACED WITH LETHAL AMOUNTS OF
 			FENTANYL</span>
 
 	</div>
