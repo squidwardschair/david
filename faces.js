@@ -54,10 +54,10 @@ function show_faces() {
     if (tooHigh) {
       facediv.style.width = '11.6vw'
       facediv.style.height = '17.33vw'
-    } else if (screen.width > 800) {
+    } else if (screen.width > 1023) {
       facediv.style.width = '5.8vw'
       facediv.style.height = '8.66vw'
-    } else if (screen.width > 700) {
+    } else if (screen.width > 767) {
       facediv.style.width = '7.54vw'
       facediv.style.height = '11.27vw'
     } else {
