@@ -3,38 +3,12 @@ html {
     width: 100%;
 }
 
-#flashdiv {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    text-align: center;
-    position: fixed;
-    visibility: hidden;
-    z-index: 5;
-    
-}
-
-#flashtext {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 30px;
-    color: white;
-
-}
-
-
 #header {
     display: flex;
     background-image: url(assets/background.jpg);
     flex-flow: column;
     background-size: cover;
-    align-content: center;
+    height: 100vh;
     
 }
 
@@ -67,6 +41,8 @@ html {
 .navbar {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
 .navbar a {
@@ -88,21 +64,15 @@ html {
     color: black;
   }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
-      float: right;
       display: block;
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
 
     .navbar.responsive {
         background-color: black;
@@ -111,7 +81,7 @@ html {
     .navbar.responsive a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
     }
   } 
 
@@ -556,3 +526,12 @@ whity {
 
 }
 
+#infotext {
+    width: 90vw;
+    text-align: center;
+    animation: fadeOut 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 3vh;
+    justify-self: flex-start;
+}

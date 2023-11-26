@@ -2,6 +2,7 @@ var parent = document.getElementById("faces");
 var child = document.getElementById("defaultface")
 var firststat = document.getElementById("firststat")
 var textbox = document.getElementById("firstbox")
+var infotext = document.getElementById("infotext")
 var height = parent.offsetHeight
 var width = parent.offsetWidth
 
@@ -28,6 +29,7 @@ const navbar =
 `
 
 function show_faces() {
+  infotext.remove()
   textbox.remove()
   firststat.remove()
   parent.style.justifyContent="space-evenly"
@@ -58,6 +60,7 @@ function show_faces() {
   console.log(listchilds.length)
   console.log(nums)
   const length = listchilds.length
+  parent.style.backgroundColor="#1a1a1a"
   for (let i = 0; i < length; i++) {
     var randdiv = listchilds[Math.floor(Math.random() * listchilds.length)];
     console.log(randdiv)
@@ -72,6 +75,7 @@ function show_faces() {
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
+    parent.style.backgroundColor="black"
     parent.style.flexDirection = "column"
     for (let i = 0; i < 10; i++) {
       var statdiv = document.createElement("span")
@@ -111,11 +115,11 @@ function show_faces() {
 
   }
 
-  setTimeout(final_message, 30000)
+  setTimeout(final_message, 26000)
 
 }
 
-setTimeout(show_faces, 10000)
+setTimeout(show_faces, 15000)
 
 
 
