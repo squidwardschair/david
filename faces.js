@@ -8,6 +8,17 @@ var width = parent.offsetWidth
 
 var maxNum = (Math.floor(parent.offsetHeight / child.offsetHeight) * Math.floor(parent.offsetWidth / child.offsetWidth))
 
+var tooHigh
+
+if (maxNum>104) {
+  tooHigh=true
+  child.style.width="11.6vw"
+  child.style.height = '17.33vw'
+  maxNum = (Math.floor(parent.offsetHeight / child.offsetHeight) * Math.floor(parent.offsetWidth / child.offsetWidth))
+} else {
+  tooHigh=false
+}
+
 child.remove()
 
 const fentanylstatistics = ["2 milligrams of fentanyl, the amount that fits on the tip of a pencil, can be deadly.", "Fentanyl was responsible for nearly 70% of drug overdose deaths in 2022.", "6 out of 10 fentanyl-laced fake prescription pills contain a potentially lethal dose of fentanyl.", "In 2022, 73,654 people died from a fentanyl overdose in the US.", "One kilogram of fentanyl has the potential to kill 500,000 people.", "Fentanyl is up to 50 times stronger than heroin and up to 100 times stronger than morphine.", "In 2023, fentanyl is a leading cause of death for Americans aged 18 to 45.", "Overdose deaths from fentanyl laced stimulants have risen 50-fold since 2010.", "Fentanyl is the primary cause of drug overdose deaths among youth aged 14-18 years increasing 20% between 2020 and 2021.", "In 2021, 77% of teen drug overdose deaths were linked to fentanyl."]
@@ -40,7 +51,10 @@ function show_faces() {
     facediv.setAttribute('class', 'face')
     facediv.id = i
     parent.appendChild(facediv)
-    if (screen.width > 800) {
+    if (tooHigh) {
+      facediv.style.width = '11.6vw'
+      facediv.style.height = '17.33vw'
+    } else if (screen.width > 800) {
       facediv.style.width = '5.8vw'
       facediv.style.height = '8.66vw'
     } else if (screen.width > 700) {

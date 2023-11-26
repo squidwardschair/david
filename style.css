@@ -114,6 +114,18 @@ html {
     justify-content: end;
     margin-bottom: 5vh;
 }
+@media screen and (orientation:portrait) {
+    .textcontainer {
+        align-self: center;
+        justify-content: center;
+    }
+
+    .textheader {
+        width: 100%;
+
+    }
+
+}
 
 .coverbold {
     font-family: 'Exo 2', sans-serif;
@@ -294,7 +306,7 @@ whity {
 
 #faces {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -398,12 +410,12 @@ whity {
 
     #narcanimg {
         height: 50vh;
-        width: 100vw;
+        width: 100%;
     }
 
     #narcaninfo {
         height: 50%;
-        width: 100vw;
+        width: 100%;
     }
 }
 
