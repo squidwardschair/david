@@ -430,14 +430,14 @@ whity {
 }
 @media screen and (max-width:767px) {
     #defaultface {
-        width: 7.54vw;
-        height: 11.27vw;
+        width: 11.6vw;
+        height: 17.33vw;
     }
 }
 @media screen and (max-width:1023px) {
     #defaultface {
-        width: 11.6vw;
-        height: 17.33vw;
+        width: 7.54vw;
+        height: 11.27vw;
     }
 }
 
@@ -477,8 +477,6 @@ whity {
   }
 
 .typingtextbox {
-    margin-left: 3vw;
-    margin-right: 3vw;
     width: 80vw;
     align-self: center;
     text-align: center;
