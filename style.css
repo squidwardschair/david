@@ -33,6 +33,21 @@ html {
 
 }
 
+#bottombuttons {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  #bottombuttons {
+    flex-flow: column;
+  }
+}
+
+
 #headerplaceholder {
     height: 43vh;
     width: 25vw;
